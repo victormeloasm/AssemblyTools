@@ -1,15 +1,19 @@
-; Desenvolvido por Víctor Duarte Melo em 03/01/2017 ;
+; Desenvolvido por VÃ­ctor Duarte Melo em 03/01/2017 ;
 ; Shutdown.com. Use no MS-DOS como shutdown -s para desligar e shutdown -r para reiniciar. ;
-; Compilando é: "tasm /l /zi shutdown.asm ;
+; Compilando Ã©: "tasm /l /zi shutdown.asm ;
 ; Tlink /t shutdown.obj ;
-; ESSE PROGRAMA SÓ RODA NO MS-DOS!!! SE ESTIVER NO WINBDOWS 98 COLOQUE PARA REINICIAR EM MODO MS-DOS
+; ESSE PROGRAMA SÃ“ RODA NO MS-DOS!!! SE ESTIVER NO WINDOWS 98 COLOQUE PARA REINICIAR EM MODO MS-DOS
+; ATENTION: THIS PROGRAM ONLY WORKS ON MS-DOS MODE, IF YOU AT WINDOWS 9.X REBOOT IN MS-DOS MODE BEFORE...
+; HOW TO COMPILE: "tasm /l /zi shutdown.asm
+; HOW TO LINK: "tlink /t shutdown.obj
+; You must have installer TURBO ASSEMBLER at you machine! And it's a .COM file, not .EXE
  
 .model tiny ;it's a .COM file
 .code
 org 100h 
 start: jmp begin
 
-msg db 13,10,"Type Shutdown -s to shutdown or shutdown -r to reboot MS-DOS.",13,10,'$' ;declare the string of help to msg label
+msg db 13,10,"Type shutdown -s to shutdown or shutdown -r to reboot MS-DOS.",13,10,'$' ;declare the string of help to msg label
 
 begin proc near
 mov dl,ds:[83h] ;Get the parameters for commandline MS-DOS, 82h=-, 83h=r or s, 81h=space and 80h=lenght of the parameter 
