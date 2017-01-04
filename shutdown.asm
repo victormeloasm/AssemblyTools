@@ -4,9 +4,10 @@
 ; Tlink /t shutdown.obj ;
 ; ESSE PROGRAMA SÓ RODA NO MS-DOS!!! SE ESTIVER NO WINDOWS 98 COLOQUE PARA REINICIAR EM MODO MS-DOS
 ; ATENTION: THIS PROGRAM ONLY WORKS ON MS-DOS MODE, IF YOU ARE AT WINDOWS 9.X REBOOT IN MS-DOS MODE BEFORE...
-; HOW TO COMPILE: "tasm /l /zi shutdown.asm
-; HOW TO LINK: "tlink /t shutdown.obj
-; You must have installer TURBO ASSEMBLER at you machine! And it's a .COM file, not .EXE
+; HOW TO COMPILE: "tasm /l /zi shutdown.asm"
+; HOW TO LINK: "tlink /t shutdown.obj"
+; You must have installed TURBO ASSEMBLER from Borland at you machine! And it's a .COM file, not .EXE
+; You can't compile it using Debug.com, believe me, I tried it before use TASM.
  
 .model tiny ;it's a .COM file
 .code
