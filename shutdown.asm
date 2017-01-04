@@ -3,7 +3,7 @@
 ; Compilando é: "tasm /l /zi shutdown.asm ;
 ; Tlink /t shutdown.obj ;
 ; ESSE PROGRAMA SÓ RODA NO MS-DOS!!! SE ESTIVER NO WINDOWS 98 COLOQUE PARA REINICIAR EM MODO MS-DOS
-; ATENTION: THIS PROGRAM ONLY WORKS ON MS-DOS MODE, IF YOU AT WINDOWS 9.X REBOOT IN MS-DOS MODE BEFORE...
+; ATENTION: THIS PROGRAM ONLY WORKS ON MS-DOS MODE, IF YOU ARE AT WINDOWS 9.X REBOOT IN MS-DOS MODE BEFORE...
 ; HOW TO COMPILE: "tasm /l /zi shutdown.asm
 ; HOW TO LINK: "tlink /t shutdown.obj
 ; You must have installer TURBO ASSEMBLER at you machine! And it's a .COM file, not .EXE
